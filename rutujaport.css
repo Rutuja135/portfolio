@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.hero{
+  width: 100%;
+  height: 130vh;
+  background: url(http://getwallpapers.com/wallpaper/full/a/9/a/293983.jpg) no-repeat center/cover ;
+
+
+  position:absolute;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.logo{
+  max-height: 60px;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 100px;
+}
+nav ul li a{
+  color: indigo;
+  position: relative;
+  padding: 5px 0;
+  font-size: 2rem;
+
+}
+nav ul li a:hover{
+  color: mediumvioletred;
+}
+nav ul li a:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: purple;
+  transition: .3s;
+  bottom: 0;
+}
+nav ul li a:hover:after{
+  width: 100%;
+}
+.btn{
+  color: darkturquoise;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all .4s ease-in-out;
+  background-size: 152% 100%;
+  background: white;
+  border: 2px solid 757575;
+}
+.btn:hover{
+  background: transparent;
+  border-color: darkturquoise;
+  color: darkturquoise;
+}
+.content{
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.content .title{
+  color: darkturquoise;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content h1{
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+.content h1 span{
+  color: darkturquoise;
+}
+.content p{
+  width: 55%;
+  color: #757575;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+#about{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+#pic{
+  display: flex;
+
+}
+#pic img{
+  width: 390px;
+  height: 400px;
+}
+#intro{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+
+}
+#itro h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+
+}
+.headings{
+  font-family: century;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
